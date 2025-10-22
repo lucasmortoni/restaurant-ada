@@ -1,0 +1,163 @@
+:root {
+  --bg-p: #FAF3E0;
+  --bg-s: #8B3A3A;
+  --text-p: #2B1D1D;
+}
+
+@font-face {
+  font-family: Mexicana;
+  src: url(assets/mexicana.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-p);
+  color: var(--text-p);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg-s);
+  display: flex;
+  justify-content: space-between;
+  padding: auto;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Mexicana", serif;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 1rem;
+
+}
+
+nav a {
+  color: var(--text-p);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #D98E04;
+}
+
+.hero {
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.hero h1 {
+  font-family: "Mexicana", serif;
+  font-size: 4rem;
+  color: var(--text-p);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: var(--text-p);
+}
+
+.cta {
+  background-color: #D98E04;
+  color: var(--text-p);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.cta:hover {
+  background-color: #C75C1A;
+}
+
+.sobre {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sobre h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.sobre-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sobre-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.menu {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #FFF8F0;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+footer {
+  background-color: #8B3A3A;
+  color: var(--text-p);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}

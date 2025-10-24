@@ -1,86 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Abuela</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <header>
-    <div>
-      <h1>La Abuela</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre">Acerca de</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- https://i.pinimg.com/1200x/ee/4c/d9/ee4cd93d18495f4524be41d91343b7ef.jpg -->
-
-  <!-- <section class="hero">
-    <h1>La Abuela</h1>
-    <p>Sabor que abraza como una abuela</p>
-    <a href="#menu" class="cta">Ver Menu</a>
-  </section>
-
-  <section id="sobre" class="sobre">
-    <h2>Nuestra Historia</h2>
-    <div class="sobre-content">
-      <img src="images/sobre.jpg" alt="Cocina tradicional" />
-      <p>La Abuela nació de la pasión por las recetas tradicionales mexicanas, cocinadas con amor y memoria. Cada plato es una historia, cada sabor es un abrazo.</p>
-    </div>
-  </section>
-
-  <section id="menu" class="menu">
-    <h2>Menu</h2>
-    <div class="menu-grid">
-      <div class="card">
-        <img src="images/mole.jpg" alt="Mole Poblano" />
-        <h3>Mole Poblano</h3>
-        <p>R$ 42,00</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Pollos Hermanos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#inicio"><h1>Los Pollos Hermanos</h1></a>
       </div>
-      <div class="card">
-        <img src="images/pozole.jpg" alt="Pozole" />
-        <h3>Pozole</h3>
-        <p>R$ 38,00</p>
-      </div>
-      <div class="card">
-        <img src="images/chiles.jpg" alt="Chiles Rellenos" />
-        <h3>Chiles Rellenos</h3>
-        <p>R$ 40,00</p>
-      </div>
-      <div class="card">
-        <img src="images/tamales.jpg" alt="Tamales" />
-        <h3>Tamales</h3>
-        <p>R$ 36,00</p>
-      </div>
-      <div class="card">
-        <img src="images/arroz.jpg" alt="Arroz con Leche" />
-        <h3>Arroz con Leche</h3>
-        <p>R$ 18,00</p>
-      </div>
-      <div class="card">
-        <img src="images/flan.jpg" alt="Flan de Cajeta" />
-        <h3>Flan de Cajeta</h3>
-        <p>R$ 22,00</p>
-      </div>
-    </div>
-  </section>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Acerca de</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer id="contacto">
-    <p>Rua das Flores, 123 – Brasília, DF</p>
-    <p>Ter a Dom, 12h às 22h</p>
-    <p>(61) 99999-9999 | contacto@laabuela.com.br</p>
-    <p>Instagram | Facebook</p>
-  </footer> -->
+    <section class="hero" style="position: relative" id="inicio">
+      <img
+        src="assets/table.png"
+        alt=""
+        style="width: 100%; height: 100%; filter: brightness(30%)"
+      />
+      <div
+        class="cta"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.2rem;
+        "
+      >
+        <h3 style="font-size: 4rem">
+          Discover the bold flavors of Mexico <br />
+          from sizzling street tacos to refreshing aguas frescas.
+        </h3>
+        <p style="font-size: 2.6rem; margin-top: 1rem">
+          Authentic recipes, vibrant ambiance, and a fiesta in every bite await
+          you.
+        </p>
+        <div class="cta-btn">
+          <a href="#">Book a table now</a>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <div id="sobre"></div>
+    <section class="about">
+      <div class="about-question">
+        <p class="question">Whats makes us great?</p>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <h5>Salsa Made Daily</h5>
+          <p>Fresh, vibrant and complex. Prepared every morning.</p>
+        </div>
+        <div class="card">
+          <h5>Perfect Margaritas</h5>
+          <p>100% original tequilas. Fresh squeezes limes.</p>
+        </div>
+        <div class="card">
+          <h5>Generational Recipes</h5>
+          <p>Abuela's authentic recipes from Puebla and Osaka.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="menu">
+      <div class="about-question">
+        <p class="question">Our Signature Dishes</p>
+      </div>
+
+      <div class="card-container">
+        <a href="receita.html">
+          <div class="card">
+            <img src="assets/taco.png" alt="" />
+            <h5>Taco al Pastor</h5>
+          </div>
+        </a>
+        <div class="card">
+          <img src="assets/enchilada.png" alt="" />
+          <h5>Enchiladas Rojas</h5>
+        </div>
+        <div class="card">
+          <img src="assets/carne.png" alt="" />
+          <h5>Carne Asada</h5>
+        </div>
+      </div>
+      <div class="card-container card-container-last">
+        <div class="card">
+          <img src="assets/chiles.png" alt="" />
+          <h5>Chiles Rellenos</h5>
+        </div>
+        <div class="card">
+          <img src="assets/ceviche.png" alt="" />
+          <h5>Ceviche Tostadas</h5>
+        </div>
+        <div class="card">
+          <img src="assets/pozole.png" alt="" />
+          <h5>Pozole Rojo</h5>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacto">
+      <p>SQN 1110, Bloco A, Brasília, DF</p>
+      <p>Ter a Dom, 12h às 22h</p>
+      <p>
+        (61) 98765-4321 |
+        <a href="mailto:contacto@lospolloshermanos.com.br"
+          >contacto@lospolloshermanos.com.br</a
+        >
+      </p>
+      <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </footer>
+  </body>
 </html>
